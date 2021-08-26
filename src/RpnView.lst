@@ -1,0 +1,550 @@
+Processing Project1
+ 15 
+ 16 
+ 17 
+ 59 
+ 69 
+ 149 
+ 159 
+ 169 
+ 179 
+ 189 
+ 199 
+EmitRPN: {"Alarm Setting" Form2 VB._FormQI Caption Let }
+EmitRPN: {1170 Form2 VB._FormQI Height Let }
+EmitRPN: {True Form2 AlarmTime Visible Let }
+EmitRPN: {True Form2 Label1 Visible Let }
+EmitRPN: {True Form2 Command1 Visible Let }
+EmitRPN: {True Form2 Label3 Visible Let }
+EmitRPN: {True Form2 Label4 Visible Let }
+EmitRPN: {False Form2 Label5 Visible Let }
+EmitRPN: {False Form2 Command3 Visible Let }
+EmitRPN: {False Form2 Label2 Visible Let }
+EmitRPN: {False Form2 Command2 Visible Let }
+EmitRPN: {Form2 VB._FormQI 1 IntToVar _Missing Show Call }
+ 199 
+EmitRPN: {Command2 Caption "Alarm ON" = If }
+EmitRPN: {"Alarm OFF" Command2 Caption Let }
+EmitRPN: {Else }
+EmitRPN: {"Alarm ON" Command2 Caption Let }
+EmitRPN: {EndIf }
+ 199 
+EmitRPN: {Form5 _IDispatchQI Load Call }
+EmitRPN: {Screen Height 2 / Form1 VB._FormQI Height 2 / - Form1 VB._FormQI Top Let }
+EmitRPN: {"C:\windows\chimes.wav" Form2 MMControl1 FileName Let }
+EmitRPN: {"open" Form2 MMControl1 Command Let }
+EmitRPN: {Form2 MMControl1 With }
+EmitRPN: {False WithValue(1) Notify Let }
+EmitRPN: {True WithValue(1) Wait Let }
+EmitRPN: {False WithValue(1) Shareable Let }
+EmitRPN: {EndWith }
+EmitRPN: {Form2 MMControl1 Mode 524 = If }
+EmitRPN: {"Not Set" Form2 Label5 Caption Let }
+EmitRPN: {Else }
+EmitRPN: {Form2 MMControl1 FileName Form2 Label5 Caption Let }
+EmitRPN: {EndIf }
+EmitRPN: {Form5 _IDispatchQI Load Call }
+ 199 
+EmitRPN: {Form3 VB._FormQI _Missing _Missing Show Call }
+ 199 
+ 199 
+EmitRPN: {"stop" Form2 MMControl1 Command Let }
+ 199 
+EmitRPN: {True Form2 MMControl1 AutoEnable Let }
+EmitRPN: {"Wave File Setting" Form2 VB._FormQI Caption Let }
+EmitRPN: {1785 Form2 VB._FormQI Height Let }
+EmitRPN: {False Form2 AlarmTime Visible Let }
+EmitRPN: {False Form2 Label1 Visible Let }
+EmitRPN: {False Form2 Command1 Visible Let }
+EmitRPN: {False Form2 Label3 Visible Let }
+EmitRPN: {False Form2 Label4 Visible Let }
+EmitRPN: {True Form2 Command3 Visible Let }
+EmitRPN: {True Form2 Label5 Visible Let }
+EmitRPN: {True Form2 Label2 Visible Let }
+EmitRPN: {True Form2 Command2 Visible Let }
+EmitRPN: {Form2 VB._FormQI 1 IntToVar _Missing Show Call }
+ 199 
+EmitRPN: {Time VarToStr Form2 Label4 Caption Let }
+EmitRPN: {Time VarToStr Label1 Caption Let }
+EmitRPN: {Time Label4 ObjToVar = Command2 Caption "Alarm ON" = BoolToVar And VarToBool If }
+EmitRPN: {Label1 Caption Form4 Label2 Caption Let }
+EmitRPN: {Form4 VB._FormQI _Missing _Missing Show Call }
+EmitRPN: {Form2 MMControl1 Mode 529 = If }
+EmitRPN: {"pause" Form2 MMControl1 Command Let }
+EmitRPN: {False Form2 MMControl1 PauseVisible Let }
+EmitRPN: {True Form2 MMControl1 PlayVisible Let }
+EmitRPN: {Else }
+EmitRPN: {Form2 MMControl1 Mode 525 = If }
+EmitRPN: {"prev" Form2 MMControl1 Command Let }
+EmitRPN: {"play" Form2 MMControl1 Command Let }
+EmitRPN: {False Form2 MMControl1 PauseVisible Let }
+EmitRPN: {True Form2 MMControl1 PlayVisible Let }
+EmitRPN: {Else }
+EmitRPN: {EndIf }
+EmitRPN: {EndIf }
+EmitRPN: {EndIf }
+ 199 
+vbTypeName: sym=mnuAbout varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuAbout As Menu
+ 199 
+vbTypeName: sym=mnuseparator1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuseparator1 As Menu
+ 199 
+vbTypeName: sym=mnuQuit varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuQuit As Menu
+ 199 
+vbTypeName: sym=mnuseparator varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuseparator As Menu
+ 199 
+vbTypeName: sym=mnuStop varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuStop As Menu
+ 199 
+vbTypeName: sym=mnuWave varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuWave As Menu
+ 199 
+vbTypeName: sym=mnu varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnu As Menu
+ 199 
+vbTypeName: sym=Label1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label1 As Label
+ 199 
+vbTypeName: sym=Label2 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label2 As Label
+ 199 
+vbTypeName: sym=Label3 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label3 As Label
+ 199 
+vbTypeName: sym=Label4 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label4 As Label
+ 199 
+vbTypeName: sym=Line1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Line
+vbVariableType:  As Line
+vbTypeName=Line1 As Line
+ 199 
+vbTypeName: sym=Timer1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Timer
+vbVariableType:  As Timer
+vbTypeName=Timer1 As Timer
+ 199 
+vbTypeName: sym=Command1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: CommandButton
+vbVariableType:  As CommandButton
+vbTypeName=Command1 As CommandButton
+ 199 
+vbTypeName: sym=Command2 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: CommandButton
+vbVariableType:  As CommandButton
+vbTypeName=Command2 As CommandButton
+ 69 
+ 79 
+ 88 
+ 139 
+ 69 
+ 149 
+ 159 
+ 169 
+ 179 
+ 189 
+ 199 
+EmitRPN: {Form2 VB._FormQI Hide Call }
+EmitRPN: {Form1 VB._FormQI _Missing _Missing Show Call }
+EmitRPN: {AlarmTime Text "" = SingleIf }
+EmitRPN: {ExitSub }
+EmitRPN: {EndIf }
+EmitRPN: {AlarmTime ObjToVar AddRef IsDate Not If }
+EmitRPN: {"The time you entered was not valid." StrToVar AddRef _Param2 _Missing AddRef _Missing AddRef _Missing AddRef MsgBox Call }
+EmitRPN: {Else }
+EmitRPN: {AlarmTime ObjToVar AddRef CDate DateToStr AlarmTime Text Let }
+EmitRPN: {AlarmTime Text Form1 Label4 Caption Let }
+EmitRPN: {EndIf }
+ 199 
+EmitRPN: {Form2 MMControl1 With }
+EmitRPN: {False WithValue(1) Notify Let }
+EmitRPN: {True WithValue(1) Wait Let }
+EmitRPN: {False WithValue(1) Shareable Let }
+EmitRPN: {EndWith }
+EmitRPN: {cdlOFNFileMustExist CommonDialog1 Flags Let }
+EmitRPN: {Label5 Caption CommonDialog1 FileName Let }
+EmitRPN: {OnErrorResumeNext }
+EmitRPN: {"Wave Files (*.wav)|*.wav|All Files (*.*)|*.*|" CommonDialog1 Filter Let }
+EmitRPN: {CommonDialog1 ShowOpen Call }
+EmitRPN: {Err Number 32755 <> If }
+EmitRPN: {"Open" Form2 MMControl1 Command Let }
+EmitRPN: {EndIf }
+EmitRPN: {CommonDialog1 FileName FileLen 0 < If }
+EmitRPN: {Beep Call }
+EmitRPN: {53 IntToVar AddRef Error AddRef _Param2 _Missing AddRef _Missing AddRef _Missing AddRef MsgBox Call }
+EmitRPN: {ExitSub }
+EmitRPN: {"Open" Form2 MMControl1 Command Let }
+EmitRPN: {Else }
+EmitRPN: {"close" Form2 MMControl1 Command Let }
+EmitRPN: {CommonDialog1 FileName Form2 MMControl1 FileName Let }
+EmitRPN: {"Open" Form2 MMControl1 Command Let }
+EmitRPN: {EndIf }
+EmitRPN: {MMControl1 Mode 524 = If }
+EmitRPN: {Beep Call }
+EmitRPN: {"Invalid File" StrToVar AddRef _Param2 _Missing AddRef _Missing AddRef _Missing AddRef MsgBox Call }
+EmitRPN: {"close" Form2 MMControl1 Command Let }
+EmitRPN: {Label5 Caption Form2 MMControl1 FileName Let }
+EmitRPN: {Form2 MMControl1 FileName Label5 Caption Let }
+EmitRPN: {"Open" Form2 MMControl1 Command Let }
+EmitRPN: {Else }
+EmitRPN: {Form2 MMControl1 FileName Label5 Caption Let }
+EmitRPN: {EndIf }
+EmitRPN: {"prev" Form2 MMControl1 Command Let }
+EmitRPN: {False Form2 MMControl1 PauseVisible Let }
+EmitRPN: {True Form2 MMControl1 PlayVisible Let }
+ 199 
+EmitRPN: {KeyAscii SubRef 27 = If }
+EmitRPN: {Form2 VB._FormQI Hide Call }
+EmitRPN: {Form1 VB._FormQI _Missing _Missing Show Call }
+EmitRPN: {EndIf }
+ 199 
+EmitRPN: {Form2 VB._FormQI Hide Call }
+EmitRPN: {Form1 VB._FormQI _Missing _Missing Show Call }
+ 199 
+EmitRPN: {KeyAscii SubRef 27 = If }
+EmitRPN: {Form2 VB._FormQI Hide Call }
+EmitRPN: {Form1 VB._FormQI _Missing _Missing Show Call }
+EmitRPN: {EndIf }
+ 199 
+EmitRPN: {AlarmTime Visible BoolToInt True = SingleIf }
+EmitRPN: {AlarmTime SetFocus Call }
+EmitRPN: {EndIf }
+ 199 
+EmitRPN: {Screen Height 2 / Form2 VB._FormQI Height 2 / - Form2 VB._FormQI Top Let }
+EmitRPN: {Form2 MMControl1 FileName Label5 Caption Let }
+ 199 
+EmitRPN: {"prev" Form2 MMControl1 Command Let }
+EmitRPN: {False Form2 MMControl1 PauseVisible Let }
+EmitRPN: {True Form2 MMControl1 PlayVisible Let }
+ 199 
+EmitRPN: {"prev" Form2 MMControl1 Command Let }
+EmitRPN: {False Form2 MMControl1 PlayVisible Let }
+EmitRPN: {True Form2 MMControl1 PauseVisible Let }
+ 199 
+EmitRPN: {MMControl1 Mode 526 = Not If }
+EmitRPN: {False Form2 MMControl1 PauseVisible Let }
+EmitRPN: {True Form2 MMControl1 PlayVisible Let }
+EmitRPN: {"All Devices that can Play files in this format are busy" StrToVar AddRef _Param2 _Missing AddRef _Missing AddRef _Missing AddRef MsgBox Call }
+EmitRPN: {EndIf }
+ 199 
+EmitRPN: {"prev" Form2 MMControl1 Command Let }
+ 199 
+vbTypeName: sym=Label4 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label4 As Label
+ 199 
+vbTypeName: sym=Label3 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label3 As Label
+ 199 
+vbTypeName: sym=Label2 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label2 As Label
+ 199 
+vbTypeName: sym=Label5 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label5 As Label
+ 199 
+vbTypeName: sym=Label1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label1 As Label
+ 199 
+vbTypeName: sym=CommonDialog1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: CommonDialog
+vbVariableType:  As CommonDialog
+vbTypeName=CommonDialog1 As CommonDialog
+ 199 
+vbTypeName: sym=MMControl1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: MMControl
+vbVariableType:  As MMControl
+vbTypeName=MMControl1 As MMControl
+ 199 
+vbTypeName: sym=Command1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: CommandButton
+vbVariableType:  As CommandButton
+vbTypeName=Command1 As CommandButton
+ 199 
+vbTypeName: sym=Command2 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: CommandButton
+vbVariableType:  As CommandButton
+vbTypeName=Command2 As CommandButton
+ 199 
+vbTypeName: sym=AlarmTime varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: TextBox
+vbVariableType:  As TextBox
+vbTypeName=AlarmTime As TextBox
+ 199 
+vbTypeName: sym=Command3 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: CommandButton
+vbVariableType:  As CommandButton
+vbTypeName=Command3 As CommandButton
+ 69 
+ 149 
+ 159 
+ 169 
+ 179 
+ 189 
+ 199 
+EmitRPN: {Form4 _IDispatchQI Unload Call }
+EmitRPN: {Form1 VB._FormQI _Missing _Missing Show Call }
+ 199 
+EmitRPN: {3390 Form4 VB._FormQI Left Let }
+EmitRPN: {Form1 VB._FormQI Top 400 + Form4 VB._FormQI Top Let }
+EmitRPN: {Form4 VB._FormQI hWnd HWND_TOPMOST Form4 VB._FormQI Left 15 / SngToLng Form4 VB._FormQI Top 15 / SngToLng Form4 VB._FormQI Width 15 / SngToLng Form4 VB._FormQI Height 15 / SngToLng 16 SetWindowPos Call }
+ 199 
+EmitRPN: {Form4 _IDispatchQI Unload Call }
+ 199 
+vbTypeName: sym=Label1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label1 As Label
+ 199 
+vbTypeName: sym=Label2 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label2 As Label
+ 199 
+vbTypeName: sym=Image1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Image
+vbVariableType:  As Image
+vbTypeName=Image1 As Image
+ 199 
+vbTypeName: sym=Command1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: CommandButton
+vbVariableType:  As CommandButton
+vbTypeName=Command1 As CommandButton
+ 69 
+ 149 
+ 159 
+ 169 
+ 179 
+ 189 
+ 199 
+EmitRPN: {Form3 _IDispatchQI Unload Call }
+ 199 
+EmitRPN: {Form3 VB._FormQI Form1 VB._FormQI Left 600 + Form1 VB._FormQI Top 260 + SngToVar _Missing _Missing Move Call }
+ 199 
+EmitRPN: {Form3 _IDispatchQI Unload Call }
+ 199 
+vbTypeName: sym=Image1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Image
+vbVariableType:  As Image
+vbTypeName=Image1 As Image
+ 199 
+vbTypeName: sym=Label1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label1 As Label
+ 199 
+vbTypeName: sym=Label2 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Label
+vbVariableType:  As Label
+vbTypeName=Label2 As Label
+ 199 
+vbTypeName: sym=Command1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: CommandButton
+vbVariableType:  As CommandButton
+vbTypeName=Command1 As CommandButton
+ 69 
+ 149 
+ 159 
+ 169 
+ 179 
+ 189 
+ 199 
+EmitRPN: {NIM_DELETE mtIconData AddRef Shell_NotifyIcon 0 = If }
+EmitRPN: {"Unable to delete icon from system tray!" StrToVar AddRef _Param2 _Missing AddRef _Missing AddRef _Missing AddRef MsgBox Call }
+EmitRPN: {EndIf }
+ 199 
+EmitRPN: {mtIconData With }
+EmitRPN: {mtIconData UDTToVar AddRef Len VarToLng WithValue(1) cbSize Let }
+EmitRPN: {Form5 VB._FormQI hWnd WithValue(1) hWnd Let }
+EmitRPN: {WM_MOUSEMOVE WithValue(1) uCallbackMessage Let }
+EmitRPN: {1& WithValue(1) uID Let }
+EmitRPN: {7 WithValue(1) uFlags Let }
+EmitRPN: {0 imgTrayIcon Picture Handle INTToLng WithValue(1) hIcon Let }
+EmitRPN: {0 imgTrayIcon Tag 0 Chr & StrToStrN WithValue(1) szTip Let }
+EmitRPN: {NIM_ADD mtIconData AddRef Shell_NotifyIcon 0 = If }
+EmitRPN: {"Unable to add icon to system tray!" StrToVar AddRef _Param2 _Missing AddRef _Missing AddRef _Missing AddRef MsgBox Call }
+EmitRPN: {EndIf }
+EmitRPN: {EndWith }
+ 199 
+EmitRPN: {AddIconToTray Call }
+ 199 
+EmitRPN: {bBusy BoolToInt False = If }
+EmitRPN: {True bBusy Let }
+EmitRPN: {X SngRefToVar AddRef CLng SelectCase }
+EmitRPN: {WM_LBUTTONDBLCLK Case Case }
+EmitRPN: {Form1 VB._FormQI _Missing _Missing Show Call }
+EmitRPN: {WM_RBUTTONUP Case Case }
+EmitRPN: {Form5 VB._FormQI mnuTray _IDispatchQI 2 IntToVar _Missing _Missing mnuShow ObjToVar PopupMenu Call }
+EmitRPN: {EndSelect }
+EmitRPN: {False bBusy Let }
+EmitRPN: {EndIf }
+ 199 
+EmitRPN: {Form3 VB._FormQI _Missing _Missing Show Call }
+ 199 
+EmitRPN: {"Alarm Setting" Form2 VB._FormQI Caption Let }
+EmitRPN: {1170 Form2 VB._FormQI Height Let }
+EmitRPN: {True Form2 AlarmTime Visible Let }
+EmitRPN: {True Form2 Label1 Visible Let }
+EmitRPN: {True Form2 Command1 Visible Let }
+EmitRPN: {True Form2 Label3 Visible Let }
+EmitRPN: {True Form2 Label4 Visible Let }
+EmitRPN: {False Form2 Label5 Visible Let }
+EmitRPN: {False Form2 Command3 Visible Let }
+EmitRPN: {False Form2 Label2 Visible Let }
+EmitRPN: {False Form2 Command2 Visible Let }
+EmitRPN: {Form2 VB._FormQI 1 IntToVar _Missing Show Call }
+ 199 
+EmitRPN: {DeleteIconFromTray Call }
+ 199 
+EmitRPN: {Form1 VB._FormQI _Missing _Missing Show Call }
+ 199 
+EmitRPN: {Index SubRef mnLight Let }
+EmitRPN: {mtIconData With }
+EmitRPN: {mnLight IntToLng imgTrayIcon Picture Handle INTToLng WithValue(1) hIcon Let }
+EmitRPN: {mnLight IntToLng imgTrayIcon Tag 0 Chr & StrToStrN WithValue(1) szTip Let }
+EmitRPN: {EndWith }
+EmitRPN: {NIM_MODIFY mtIconData AddRef Shell_NotifyIcon 0 = If }
+EmitRPN: {"Unable to change icon in system tray!" StrToVar AddRef _Param2 _Missing AddRef _Missing AddRef _Missing AddRef MsgBox Call }
+EmitRPN: {EndIf }
+EmitRPN: {mnLight IntToLng imgTrayIcon Tag Form1 Command2 Caption Let }
+ 199 
+EmitRPN: {True Form2 MMControl1 AutoEnable Let }
+EmitRPN: {"Wave File Setting" Form2 VB._FormQI Caption Let }
+EmitRPN: {1785 Form2 VB._FormQI Height Let }
+EmitRPN: {False Form2 AlarmTime Visible Let }
+EmitRPN: {False Form2 Label1 Visible Let }
+EmitRPN: {False Form2 Command1 Visible Let }
+EmitRPN: {False Form2 Label3 Visible Let }
+EmitRPN: {False Form2 Label4 Visible Let }
+EmitRPN: {True Form2 Command3 Visible Let }
+EmitRPN: {True Form2 Label5 Visible Let }
+EmitRPN: {True Form2 Label2 Visible Let }
+EmitRPN: {True Form2 Command2 Visible Let }
+EmitRPN: {Form2 VB._FormQI _Missing _Missing Show Call }
+ 199 
+vbTypeName: sym=mnuExit varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuExit As Menu
+ 199 
+vbTypeName: sym=mnuTray2 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuTray2 As Menu
+ 199 
+vbTypeName: sym=mnuWave varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuWave As Menu
+ 199 
+vbTypeName: sym=mnuShow varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuShow As Menu
+ 199 
+vbTypeName: sym=mnuAlarmSet varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuAlarmSet As Menu
+ 199 
+vbTypeName: sym=mnuAbout varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuAbout As Menu
+ 199 
+vbTypeName: sym=mnuTray1 varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuTray1 As Menu
+ 199 
+vbTypeName: sym=mnuState varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuState As Menu
+ 199 
+vbTypeName: sym=mnuTray varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Menu
+vbVariableType:  As Menu
+vbTypeName=mnuTray As Menu
+ 199 
+vbTypeName: sym=imgTrayIcon varType=False
+vbVariableType: dt= 9  vd=False
+vbDataType: Image
+vbVariableType:  As Image
+vbTypeName=imgTrayIcon As Image

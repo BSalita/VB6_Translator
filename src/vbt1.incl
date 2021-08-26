@@ -1,0 +1,14 @@
+
+VBT_DIR = /d/sw/vbt
+
+VBTO = main.o vba.o vbtreg.o vbtsubs.o vbtTLib.o undefs.o
+
+SAG_C_FLAGS = $(C_FLAGS) $(C_DEFINES) $(C_DEFINES_PROXY) $(C_INCLUDES)
+SAG_LD_FLAGS = $(PROGRAM_LD_FLAGS)
+SAG_L_LIBS = $(PROGRAM_LINKLIBS)
+
+LIBS = -lm -ldl $(SAG_L_LIBS)
+# in Linux, -dD -E to output preprocess stuff to stdout
+CFLAGS = $(SAG_C_FLAGS) -c  -I $(VBT_DIR)
+CFLAGSO = $(CFLAGS) #-O2 generates inline warnings 
+LFLAGS = $(SAG_LD_FLAGS)

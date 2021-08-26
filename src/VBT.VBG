@@ -1,0 +1,16 @@
+VBGROUP 5.0
+StartupProject=vbtCEmitter.vbp
+Project=vbtVBEmitter.vbp
+Project=vbtIDL.vbp
+Project=vbtRegistry.vbp
+Project=VBTAddIn.vbp
+Project=vbtRPNView.vbp
+Project=vbtMakefile.vbp
+Project=vbtCView.vbp
+Project=vbtVBview.vbp
+Project=vbtDspEmitter.vbp
+Project=vbtRefsEmitter.vbp
+Project=vbtVBG.vbp
+Project=vbtCS\Emitter\CSEmitter.vbp
+Project=vbtDelphi\Emitter\PasEmitter.vbp
+Project=vbtJava\Emitter\JavaEmitter.vbp

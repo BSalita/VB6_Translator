@@ -1,0 +1,10 @@
+subdir=bas
+group.OutputPath=C:\sw\vbt\
+group.Name=groupname
+VBTOutputPath=C:\sw\vbt\groupname\Project1\bas\
+GroupFile: C:\sw\vbt\groupname\Project1\bas\groupname.vbg gpc= 1 
+Processing Project1 mc= 6 
+ProjectFile: C:\sw\vbt\groupname\Project1\bas\Project1.vbp vbfn=C:\sw\vbt\A1VBCode\Alarm\Alarm Clock.vbp
+Shelling out to "C:\Program Files\Microsoft Visual Studio\VB98\VB6.EXE C:\sw\vbt\groupname\Project1\bas\groupname.vbg"
+AppActiveate taskID= 1644 
+Done

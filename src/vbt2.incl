@@ -1,0 +1,18 @@
+main.o: $(VBT_DIR)/$(@:.o=.c)
+	cc $(DEFS) $(CFLAGSO) $(VBT_DIR)/main.c
+
+vba.o: $(VBT_DIR)/$(@:.o=.c)
+	cc $(DEFS) $(CFLAGSO) $(VBT_DIR)/vba.c
+
+vbtreg.o: $(VBT_DIR)/$(@:.o=.c)
+	cc $(DEFS) $(CFLAGSO) $(VBT_DIR)/vbtreg.c
+
+vbtsubs.o: $(VBT_DIR)/$(@:.o=.c)
+	cc $(DEFS) $(CFLAGSO) $(VBT_DIR)/vbtsubs.c
+
+vbtTLib.o: $(VBT_DIR)/$(@:.o=.c)
+	cc $(DEFS) $(CFLAGSO) $(VBT_DIR)/vbtTLib.c
+
+undefs.o: $(VBT_DIR)/$(@:.o=.c)
+	cc $(DEFS) $(CFLAGSO) $(VBT_DIR)/undefs.c
+

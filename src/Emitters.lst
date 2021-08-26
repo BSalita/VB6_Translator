@@ -1,0 +1,25 @@
+makehandler: makecompiledfile
+makehandler: FullName=C:\Program Files\Microsoft Visual Studio\VB98\VB6.EXE
+makehandler: LastUsedPath=C:\sw\vbt\A1VBCode\Alarm
+makehandler: Name=Microsoft Visual Basic
+makehandler: TemplatePath=C:\Program Files\Microsoft Visual Studio\VB98\Template
+makehandler: Caption=Project1 - Microsoft Visual Basic [design]
+makehandler: show progress form
+makehandler: calling MakeCompiledFile
+makehandler: calling vbt
+after addinmain
+Processing vbtRPNview.RPNview
+Processing vbtVBview.VBview
+Processing vbtCview.Cview
+Processing vbtVBEmitter.vbEmiter
+Processing vbtCEmitter.cEmiter
+Processing vbtCSEmitter.CSEmitter
+Processing vbtJavaEmitter.JavaEmitter
+Processing vbtPasEmitter.PasEmitter
+Processing vbtIDL.vbIDL
+Processing vbtMakefile.cMakefile
+Processing vbtRefsEmitter.RefEmiter
+Processing vbtRegistry.vbRegistry
+Processing vbtVBG.Emitter
+Processing vbtDspEmitter.DspEmitter
+makehandler: done handled=False CancelDefault=True

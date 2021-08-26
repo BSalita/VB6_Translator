@@ -1,0 +1,11 @@
+Processing Project1
+subdir=c
+group.OutputPath=C:\sw\vbt\
+group.Name=groupname
+BuildFileName=C:\sw\vbt\A1VBCode\Alarm\Alarm Clock.exe
+FileName=C:\sw\vbt\A1VBCode\Alarm\Alarm Clock.vbp
+Name=Project1
+FullName=C:\Program Files\Microsoft Visual Studio\VB98\VB6.EXE
+LastUsedPath=C:\sw\vbt\A1VBCode\Alarm
+StartUpProject.BuildFileName=C:\sw\vbt\A1VBCode\Alarm\Alarm Clock.exe
+VBTOutputPath=C:\sw\vbt\groupname\Project1\c\
