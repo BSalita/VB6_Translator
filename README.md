@@ -1,5 +1,5 @@
 # VB6_Translator
-Translate VB6 project files and source code to new target language. Reads project files, builds AST (Abstract Syntax Tree), traverses AST emitting target (language).
+Translate VB6 project files and source code to new target language. Reads project files, builds AST (Abstract Syntax Tree), traverses AST emitting target.
 
 ## Status
 Work no longer in progress. Build process may be missing files. C is only target (mostly) implemented.
