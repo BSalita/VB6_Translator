@@ -2,7 +2,7 @@
 Translate VB6 project files and source code to new target language. Reads project files, builds AST (Abstract Syntax Tree), traverses AST emitting target.
 
 ## Status
-Work no longer in progress. Build process may be missing files. C is only target (mostly) implemented.
+Work no longer in progress. Build process may be missing files. C is only target (mostly) implemented. You'll have to create your own emitter.
 
 ## Requirements
 1. VB6 development system.
